@@ -1,10 +1,32 @@
 :root{
-    --background : #333;
-    --background2 : #262626;
+    --background : #1B263B;
+    --background2 : #0D1B2A;
     --texte : #f1f1f1;
     --spoil: #f1f1f1;
     --spoil2: #333;
 }
+
+@font-face {
+    font-family: 'Mason';
+    src: url('police/Mason-bold.otf') format('truetype');
+
+    font-family: 'Prompt';
+    src: url('police/Prompt-Regular.ttf') format('truetype');
+
+    font-family: 'Imprima';
+    src: url('police/Imprima-Regular.ttf') format('truetype');
+
+    font-family: 'Dosis';
+    src: url('police/Dosis-VariableFont_wght.ttf') format('truetype');
+  }
+
+  
+body {
+    font-family: 'Imprima', sans-serif;
+    margin: 0px;
+    padding: 0px;
+  }
+  
 
 body {
     background-color: var(--background);
@@ -29,31 +51,41 @@ body {
 
 .main2 {
     width: 30%;
+    background-color: var(--background2);
 }
 
+.experience{
+    margin-top: 20%;
+}
+
+.formation, .interet{
+    margin-top: 10%;
+}
+
+h1{
+    font-family: 'Mason';
+    font-size: 80px;
+    letter-spacing: 10px;
+    color: #F0B27A ;
+}
+
+h2{
+    font-family: 'Prompt';
+    font-size: 20px;
+    letter-spacing: 1px;
+}
 .en_tete {
     text-align: center;
 }
 
-.photo_CV {
-    max-width: 40%;
-    height: auto;
-    margin-top: 20px;
-}
-
 .titre_cat {
-    font-size: 24px;
     font-weight: bold;
+    text-decoration: underline;
+    font-family: 'Dosis';
 }
 
 .sous_titre_cat {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.sous_titre_cat2 {
-    font-size: 18px;
-    font-weight: bold;
+    font-family: 'Dosis';
 }
 
 .date_cat {
@@ -66,6 +98,10 @@ body {
     margin-top: 0;
 }
 
+.InteretIcon svg {
+    font-size: 50px;
+  }
+  
 .cordonnee {
     background-color: var(--background);
     padding: 10px;
@@ -73,32 +109,23 @@ body {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
-.IconSpoil{
+.cordonnee .photo_CV {
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
+.cordonnee .IconOeil {
+    text-align: center;
     cursor: pointer;
 }
+
 .spoil{
     background-color: var(--spoil);
 }
 
-
-.competence {
-    background-color: var(--background);
-    padding: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-}
-
-.objetctif_perso {
-    background-color: var(--background);
-    padding: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-}
-
-.langues {
-    background-color: var(--background);
-    padding: 10px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+.LienLink {
+    text-decoration: none;
+    color: var(--texte);
 }
 
 progress{
@@ -127,6 +154,7 @@ progress{
     .main,
     .main2 {
     width: 100%;
+    text-align: center;
     }
     }
     
@@ -159,18 +187,16 @@ progress{
     }
     
     .titre_cat {
-    font-size: 24px;
+    font-size: 35px;
     font-weight: bold;
     }
     
     .sous_titre_cat {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 25px;
     }
     
     .sous_titre_cat2 {
     font-size: 18px;
-    font-weight: bold;
     }
     
     .date_cat {
