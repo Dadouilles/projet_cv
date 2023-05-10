@@ -11,15 +11,15 @@ document.addEventListener('DOMContentLoaded', () => {
     ChangeTheme.addEventListener('click', () => {
       if(Theme === 0){
         document.documentElement.style.setProperty('--texte', '#262626');
-        document.documentElement.style.setProperty('--background', '#3E5C76');
-        document.documentElement.style.setProperty('--background2', '#748CAB');
+        document.documentElement.style.setProperty('--background', '#CCD1D1 ');
+        document.documentElement.style.setProperty('--background2', '#707B7C ');
         document.documentElement.style.setProperty('--spoil', '#262626');
         pIcon.innerHTML = soleil;
         Theme++;
       } else {
         document.documentElement.style.setProperty('--texte', '#f1f1f1');
         document.documentElement.style.setProperty('--background', '#1B263B');
-        document.documentElement.style.setProperty('--background2', '#0D1B2A');
+        document.documentElement.style.setProperty('--background2', '#283747');
         document.documentElement.style.setProperty('--spoil', '#f1f1f1');
         pIcon.innerHTML = lune;
         Theme--;
