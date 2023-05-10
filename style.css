@@ -1,0 +1,190 @@
+:root{
+    --background : #333;
+    --background2 : #262626;
+    --texte : #f1f1f1;
+    --spoil: #f1f1f1;
+    --spoil2: #333;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--texte);
+}
+.BtnTheme{
+    cursor: pointer;
+    color: var(--ecriture);
+    font-size: 20px;
+    border-radius: 5px;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    width: 65%;
+}
+
+.main2 {
+    width: 30%;
+}
+
+.en_tete {
+    text-align: center;
+}
+
+.photo_CV {
+    max-width: 40%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.titre_cat {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sous_titre_cat {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sous_titre_cat2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.date_cat {
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.contenu_cat {
+    margin-top: 0;
+}
+
+.cordonnee {
+    background-color: var(--background);
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.IconSpoil{
+    cursor: pointer;
+}
+.spoil{
+    background-color: var(--spoil);
+}
+
+
+.competence {
+    background-color: var(--background);
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.objetctif_perso {
+    background-color: var(--background);
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.langues {
+    background-color: var(--background);
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+progress{
+    width: 20%;
+    accent-color: #85C1E9;
+}
+
+.fr {
+    margin-top: 0;
+}
+
+.en {
+    margin-top: 0;
+}
+
+.ndls {
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+    flex-direction: column;
+    max-width: 100%;
+    padding: 0 20px;
+    }
+    .main,
+    .main2 {
+    width: 100%;
+    }
+    }
+    
+    @media only screen and (min-width: 800px) {
+    .container {
+    max-width: 800px;
+    }
+    .main {
+    width: 65%;
+    }
+    .main2 {
+    width: 30%;
+    }
+    }
+    
+    .photo_CV {
+    max-width: 50%;
+    height: auto;
+    margin-top: 20px;
+    }
+    
+    .cordonnee,
+    .competence,
+    .objetctif_perso,
+    .langues {
+    background-color: var(--background2);
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .titre_cat {
+    font-size: 24px;
+    font-weight: bold;
+    }
+    
+    .sous_titre_cat {
+    font-size: 20px;
+    font-weight: bold;
+    }
+    
+    .sous_titre_cat2 {
+    font-size: 18px;
+    font-weight: bold;
+    }
+    
+    .date_cat {
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 10px;
+    }
+    
+    .contenu_cat {
+    margin-top: 0;
+    }
+    
+    .fr,
+    .en,
+    .ndls {
+    margin-top: 0;
+    }
